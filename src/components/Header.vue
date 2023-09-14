@@ -1,33 +1,26 @@
 <script setup>
-import { RouterLink } from 'vue-router';
-import IconFavorites from '../assets/icons/IconFavorites.vue';
-import IconSearch from '../assets/icons/IconSearch.vue';
+import { RouterLink } from "vue-router";
+import IconFavorites from "../assets/icons/IconFavorites.vue";
 </script>
 
 <template>
- <header>
-  <div class="container">
-    <div class="header_content">
-      <RouterLink to="/">
-        <img class="logo" src="./assets/icons/logo_art.svg" />
-      </RouterLink>
-      <nav>
-        <RouterLink class="nav_link" to="/">
-          <i>
-            <IconSearch />
-          </i>
-          <span>Поиск</span>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <RouterLink to="/">
+          <img alt="logo" class="logo" src="../assets/icons/logo_art.svg" width="130" height="50" />
         </RouterLink>
-        <RouterLink class="nav_link" to="/favorites">
+        <nav>
+          <RouterLink class="nav__link" to="/favorites">
             <i>
               <IconFavorites />
             </i>
-            <span>Избранное</span>
+            <span> Избранное </span>
           </RouterLink>
-      </nav>
+        </nav>
+      </div>
     </div>
-  </div>
- </header>
+  </header>
 </template>
 
 <style scoped lang="scss">

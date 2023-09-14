@@ -1,12 +1,13 @@
+
 <template>
     <div class="card grid__item">
         <router-link :to="{params: {id: photo?.id}, name: 'PhotoPageView'}">
-            <img :src="photo?.urls?.reqular" :alt="photo?.description">
+            <img :src="photo?.urls?.regular" :alt="photo?.description">
         </router-link>
     </div>
 </template>
 
-<script setup> 
+<script setup>
 defineProps({
     photo: {
         type: Object,

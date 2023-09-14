@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import { useStore } from "vuex";
-import IconSearch from "./icons/IconSearch.vue";
+import IconSearch from "../assets/icons/IconSearch.vue";
 
 const store = useStore();
 const search = ref("");
@@ -31,7 +31,7 @@ function searchPhotos(per_page, value) {
 
 <style scoped lang="scss">
 .section-search {
-    background-image: url("@/assets/bg-search.jpg");
+    background-image: url("../assets/background.jpg");
 }
 
 .search {

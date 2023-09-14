@@ -1,6 +1,10 @@
-import { createRouter } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
+import HomeView from "../views/HomeView.vue";
+import PhotoPageView from "../views/PhotoPageView.vue";
+import FavoriteView from "../views/FavoriteView.vue";
 
 const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
@@ -9,8 +13,8 @@ const router = createRouter({
     },
     {
       path: "/favorites",
-      name: "FavoritesView",
-      component: FavoritesView,
+      name: "FavoriteView",
+      component: FavoriteView,
     },
     {
       path: "/photo/:id",
